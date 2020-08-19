@@ -1,0 +1,174 @@
+// text color:: primary
+$palet-violet: hsl(276, 100%, 81%)
+$moderate-violet: hsl(276, 55%, 52%)
+$desaturated-dark-violet: hsl(271, 15%, 43%)
+$grayish-blue: hsl(206, 6%, 79%)
+$very-dark-desaturated-violet: hsl(271, 36%, 24%)
+$dark-grayish-violet: hsl(270, 7%, 64%)
+
+// text color:: secondary
+$white: hsl(0, 0%, 100%)
+$light-grayish-violet: hsl(270, 20%, 96%)
+$very-light-magenta: hsl(289, 100%, 72%)
+
+// typography settings
+$font-size: 16px
+
+// gradients
+$light-magenta-gradient: hsl(293, 100%, 63%)
+$light-violet-gradient: hsl(264, 100%, 61%)
+
+$left-chat-color: hsl(270, 20%, 92%)
+
+// media query breakpoints
+$mobile: 375px
+$desktop: 1440px
+
+// mobile mockup
+$border-color: #fff
+
+body
+  font-family: 'Rubik', sans-serif
+  font-size: 16px
+  line-height: 1.3em
+  // letter-spacing: 0.05em
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  background: #000
+
+
+.mobile-wrapper
+  height: 800px
+  width: 400px
+  border: 13px solid white
+  border-radius: 15px
+  display: flex
+  flex-direction: column
+  position: relative
+  background-color: $light-grayish-violet
+
+.mobile-wrapper::before
+  content: ''
+  position: absolute
+  display: block
+  height: 25px
+  width: 60%
+  background: white
+  left: 0
+  right: 0
+  margin: auto
+  border-radius: 0px 0px 15px 15px
+
+.notification-wrapper
+  // flex-grow: 1
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  border: 0px solid transparent
+  border-radius: 10px 10px 5px 5px
+  padding-top: 40px
+  background: rgb(136,56,255)
+  background: linear-gradient(90deg, rgba(136,56,255,1) 11%, rgba(233,66,255,1) 100%)
+  // box-shadow: 0px 10px 132px 6px rgba(0,0,0,0.65)
+
+.left-side
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  margin-bottom: 10px
+  .back-arrow-wrapper
+    padding-left: 14px
+    padding-right: 10px
+    color: $white
+  .profile-img-wrapper
+    margin-right: 15px
+    height: 35px
+    width: 35px
+    background-image: url(./images/avatar.jpg)
+    background-size: cover
+    background-position: center
+    border: 2px solid white
+    border-radius: 50%
+  .profile-details-wrapper
+    .profile-name
+      color: $white
+    .profile-status
+      color: $palet-violet
+      font-size: 13px
+
+.content-wrapper
+  flex-grow: 8
+  display: flex
+  flex-direction: column
+  .left-chatter-wrapper
+    background-color: $left-chat-color
+    font-size: 15px
+    width: 70%
+    border-radius: 25px 25px  25px 25px
+    text-align: left
+    padding-left: 10px
+    padding-right: 10px
+    margin-top: 8px
+    color: $moderate-violet
+  .right-chatter-wrapper
+    width: 70%
+    margin-left: auto
+    margin-top: 8px
+    font-size: 15px
+    background: $white
+    border-radius: 25px 25px  25px 25px
+    padding-left: 10px
+    padding-right: 10px
+  .dog-image-wrapper
+    display: flex
+    justify-content: space-evenly
+    width: 70%
+    margin-top: 8px
+    margin-left: auto
+    .dog-image
+      width: 70px
+      height: 70px
+      margin-right: 6px
+      background-position: center
+      background-size: cover
+      border-radius: 25px 25px 25px 25px
+
+      
+.price-wrapper
+  display: flex
+  justify-content: space-between
+  padding: 18px
+  background: rgb(136,56,255)
+  background: linear-gradient(270deg, rgba(136,56,255,1) 11%, rgba(233,66,255,1) 100%)
+  color: $white
+  border-radius: 20px 20px 20px 20px
+  .text::before
+    content: ''
+    display: inline-block
+    vertical-align: text-bottom
+    margin-right: 16px
+    width: 15px
+    height: 15px
+    border: 1px solid $very-light-magenta
+    border-radius: 50%
+  .price
+    font-weight: 500
+    font-size: 24px
+
+
+.input-area-wrapper
+  border: 0px solid transparent
+  background: red
+  border-radius: 0px 0px 15px 15px
+.search-wrapper
+  background: $white
+  width: 90%
+  margin: auto
+  margin-bottom: 16px
+  margin-top: 16px
+  border-radius: 25px 25px 25px 25px
+  flex-grow: 1
+
+
+  
